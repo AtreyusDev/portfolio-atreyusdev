@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>AtreyusDev</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1 class="AtreyusDev">Atreyus<strong style="color: aqua;">Dev</strong></h1>
+            <div class="navegacion">
+                <h2><a href="{% url 'inicio' %}">Home</a></h2>
+                <h2><a href="{% url 'proyectos' %}">Projects</a></h2>
+            </div>
+        </header>
+    </div>
+    
+    {% block content %}
+
+    {% endblock %}
+
+    <section class="pie-de-pagina">
+        <div class="pie">
+            <p>AtreyusDev - All rights reserved - 2023</p>
+            <div class="lenguajes-usados">
+
+                {% for icon in icons %}
+
+                {% if icon.name == 'python' %}
+
+                <img src="{{icon.image.url}}" class="iconos">
+
+                {% elif icon.name == 'html' %}
+
+                <img src="{{icon.image.url}}" class="iconos">
+
+                {% elif icon.name == 'css' %}
+
+                <img src="{{icon.image.url}}" class="iconos">
+
+                {% endif %}
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>

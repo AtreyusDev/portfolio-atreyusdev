@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="inicio">
+
+    <div class="acerca-de-mi">
+
+        <div class="mi-foto">
+
+            <img src="{% static 'images/foto.jpg' %}" alt="Foto de AtreyusDev">
+
+        </div>
+
+        <div class="info">
+
+            <h1>Hi, i am <strong style="color:aqua">Atreyus</strong></h1>
+
+            <p>Fullstack developer, with love for the technology and excited for improve my skills to help the humanity progress. 
+                With my passion for the art and a constant learning, i use my knowledge to make my clients' ideas possible.
+            </p>
+
+            <p>I´m specialized in Python, and i would like work with the IA. I think there is the future and i want to contribute
+                with it.
+            </p>
+
+            <p>Please, check my page, specially my Portfolio if you want to know my habilities. Good day!</p>
+
+        </div>
+        
+    </div>
+
+    <div class="seccion-iconos">
+
+        {% for icon in icons %}
+
+        {% if icon.name == 'github' %}
+
+        <a href="https://github.com/AtreyusRey" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
+
+        {% elif icon.name == 'facebook' %}
+
+        <a href="https://www.facebook.com/profile.php?id=100075827833368" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
+
+        {% elif icon.name == 'linkedin' %}
+
+        <a href="https://www.linkedin.com/in/atreyus-reyes-álvarez-316a7b256/" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
+
+        {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<br><br><br><br><br>
+
+{% endblock %}

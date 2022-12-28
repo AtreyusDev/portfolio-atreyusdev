@@ -1,0 +1,550 @@
+p {
+    font-size: 19px;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+
+.contenedor {
+    width:100%;
+    min-width: 280px;
+}
+
+header {
+    background-color:black;
+    height: 120px;
+    margin: 0% auto;
+}
+
+header h1{
+    text-align: left;
+}
+
+.AtreyusDev{
+    color: white;
+    top: 25px;
+    left: 80px;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.AtreyusDev:hover{
+    transform: scale(1.15);
+}
+
+.pie-de-pagina {
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(94, 94, 94);
+    background-color: black;
+    padding: 1%;
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.pie {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+    width: 160px;
+}
+
+.iconos {
+    width: 30px;
+    height: 30px;
+    padding: 15px 0px 0px 0px;
+    margin: 0 auto;
+    transition: all 0.2s;
+}
+
+.iconos:hover{
+    transform: scale(1.15);
+}
+
+.lenguajes-usados {
+    display: flex;
+}
+
+.inicio{
+    margin: 10% 0 10% 0;
+    background-color: rgb(36, 36, 36, 50%);
+    color:white;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.info {
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 700px;
+    min-width: 210px;
+}
+
+.info h1{
+    text-align: center;
+}
+
+.acerca-de-mi{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 60%);
+}
+
+.acerca-de-mi:hover{
+    background-color: rgb(0, 0, 0, 90%);
+}
+
+.mi-foto{
+    width: 30%;
+    height: 80%;
+    min-width: 280px;
+}
+
+.mi-foto img{
+    margin: 0 0 0 8.5%;
+    width: 80%;
+    height: 100%;
+    min-width: 270px;
+}
+
+.seccion-iconos {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.iconos-contacto {
+    margin-left: 50px;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.1s;
+}
+
+.iconos-contacto:hover{
+    transform: scale(1.15);
+}
+
+.navegacion{
+    margin-left: 70%;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.navegacion a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+@media screen and (max-width: 760px){
+    .AtreyusDev {
+        font-size: 20px;
+        top: 35px;
+        left: 30px;
+    }
+
+    .pie-de-pagina{
+        margin-top:200px
+    }
+
+    .navegacion{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .navegacion a{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    .acerca-de-mi {
+        display: block;
+        height: 700px;
+        min-width: 380;
+        
+    }
+
+    .mi-foto {
+        width: 100%;
+        height: 40%;
+        min-width: 250px;
+
+    }
+
+    .mi-foto img {
+        min-width: 100px;
+        width: 80%;
+    }
+
+    .seccion-iconos{
+        position: absolute;
+        margin-top: 0px;
+        min-width: 250px;
+    }
+
+    .proyectos{
+        margin-top: 350px;
+    }
+    
+
+}
+
+@media screen and (max-width: 437px){
+    .acerca-de-mi{
+        height: 880px;
+        min-width: 250px;
+
+    }
+
+    .pie-de-pagina{
+        margin-top:400px;
+    }
+
+    .iconos-contacto {
+        margin-left: 40px;
+        margin-right: 5px;
+    
+    }
+
+    .proyectos{
+        margin-top: 520px;
+    }
+}
+
+@media screen and (max-width: 285px){
+    .acerca-de-mi{
+        height: 900px;
+
+    }
+
+    .proyectos{
+        margin-top: 660px;
+    }
+
+    .iconos-contacto {
+        margin-left: 30px;
+        margin-right: 5px;
+    
+    }
+
+    .mi-foto {
+        width: 100%;
+        height: 30%;
+        min-width: 250px;
+
+    }
+}
+
+/* PORTAFOLIO */
+
+.project-title{
+    text-align: center;
+    margin: 10% 0px 10%;
+    font-size: 38px;
+}
+
+.project-title1{
+    text-align: center;
+    margin: 10% 0px 10%;
+    font-size: 38px;
+}
+
+.contenedor-proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    padding: 0 5% 0;
+    margin-bottom: 20%;
+
+}
+
+.contenedor-proyectos1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+    padding: 0 5% 0;
+    margin-bottom: 20%;
+
+}
+
+.contenedor-proyectos img{
+    width: 240px;
+    height: 280px;
+    transition: all 0.3s;
+    
+}
+
+.contenedor-proyectos1 img{
+    width: 500px;
+    height: 600px;
+    transition: all 0.3s;
+    
+}
+
+.proyecto-imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 10% 3% 10%;
+}
+
+.proyecto-imagen1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 10% 3% 10%;
+}
+
+#img-principal:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgb(132, 226, 255);
+}
+
+#img-principal1:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgb(132, 226, 255);
+}
+
+
+.proyecto {
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    min-width: 250px;
+}
+
+.proyecto1 {
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    min-width: 250px;
+}
+
+.proyecto:hover {
+    background-color: rgba(43, 43, 43, 0.5);
+    transform: scale(1.05);
+}
+
+.proyecto1:hover {
+    background-color: rgba(43, 43, 43, 0.5);
+    transform: scale(1.05);
+}
+
+
+.proyecto-titulo {
+    color: aqua;
+    margin: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.proyecto-titulo1 {
+    color: aqua;
+    margin: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    transition: all 0.3s;
+}
+
+.proyecto-descripcion {
+    margin: 7%;
+    text-align: justify;
+}
+
+.proyecto-descripcion1 {
+    margin: 7%;
+    text-align: justify;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 25px;
+    color: rgb(102, 102, 102);
+}
+
+.link1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 25px;
+    color: rgb(102, 102, 102);
+}
+
+
+.link img{
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s;
+}
+
+.link1 img{
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+}
+
+.link img:hover{
+    transform: scale(1.2);
+}
+
+.link1 img:hover{
+    transform: scale(1.2);
+}
+
+.sin-proyectos{
+    text-align: center;
+    margin: 5%;
+}
+
+@media screen and (max-width: 760px){
+
+    .proyecto-imagen1 img{
+        width: 320px;
+        height: 500px;
+    }
+
+    .contenedor-proyectos{
+        grid-template-columns: 1fr;
+    }
+
+    .sin-proyectos{
+        text-align: center;
+        margin-top: 50px;
+        min-width: 280px;
+    }
+
+    .contenedor-proyectos1{
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-titulo1{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 437px){
+
+    .project-title{
+        font-size: 20px;
+        min-width: 270px;
+    }
+
+    .proyecto-imagen img{
+        width: 180px;
+        height: 280px;
+    }
+
+    .project-title1{
+        font-size: 20px;
+        min-width: 270px;
+    }
+
+    .proyecto-titulo1{
+        font-size: 20px;
+    }
+
+    .proyecto-imagen1 img{
+        width: 180px;
+        height: 280px;
+    }
+
+    .link1 img{
+        width: 20px;
+        height: 20px;
+        transition: all 0.3s;
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+
+    .proyecto-imagen1 img{
+        width: 700px;
+        height: 900px;
+    }
+
+    .contenedor-proyectos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sin-proyectos{
+        text-align: center;
+        margin-top: 100px;
+        min-width: 360px;
+        font-size: 40px;
+    }
+
+    .contenedor-proyectos1{
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto-titulo1{
+        font-size: 60px;
+    }
+
+    .proyecto-titulo{
+        font-size: 35px;
+    }
+
+    .project-title1{
+        font-size: 90px;
+    }
+
+    .project-title{
+        font-size: 90px;
+    }
+
+    .proyecto-descripcion{
+        font-size: 30px;
+    }
+
+    .proyecto-descripcion1{
+        font-size: 30px;
+    }
+
+    .link1 img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .navegacion{
+        font-size: 28px;
+    }
+
+}
+
+
+
+
