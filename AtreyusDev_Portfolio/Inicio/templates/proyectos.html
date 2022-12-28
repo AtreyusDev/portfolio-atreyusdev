@@ -6,128 +6,43 @@
 
 <h1 class="project-title">My Projects</h1>
 
-    {% if quanty_projects == 1 %}
-
-        <div class="contenedor-proyectos1">
-
-            {% for project in projects %}
-
-            <div class="proyecto1">
-                <div class="proyecto-imagen1">
-                    <a href='{{project.image1.url}}' alt="project image"><img src="{{project.image1.url}}" alt="project" id="img-principal1"></a>
-                </div>
-
-                {% if project.url %}
-
-                    {% if 'github' in project.url %}
-
-                        {% for icon in icons %}
-
-                        {% if icon.name == 'github' %}
-
-                        <div class="link1">
-                            <a href="{{project.url}}" target="_blank"><img src="{{icon.image.url}}" alt="GitHub Link"></a>
-                        </div>
-
-                        {% endif %}
-
-                        {% endfor %}
-
-                    {% else %}
-
-                    {% endif %}
-
-                {% else %}
-                    <div class="link1">
-                        <h4>Without Link</h4>
-                    </div>
-
-                {% endif %}
-
-                <div class="proyecto-titulo1">
-                {{project.title}}
-                </div>
-                <div class="proyecto-descripcion1">
-                    {{project.description}}
-                </div>
-                
-            </div>
-
-            {% endfor %}
-
-        </div>
-
-    {% elif quanty_projects == 0 %}
-
-        <div class="sin-proyectos">
-            <h1>Oops.</h1>
-            <h2>Not proyects founded yet.</h2>
-        </div>
-
-    {% elif quanty_projects > 1 %}
 
         <div class="contenedor-proyectos">
 
-            {% for project in projects %}
-
             <div class="proyecto">
                 <div class="proyecto-imagen">
-                    <a href='{{project.image1.url}}' alt="project image"><img src="{{project.image1.url}}" alt="project" id="img-principal"></a>
+                    <a href='{% static "images/imagen_2022-12-27_034727150.png" %}' alt="project image"><img src="{% static 'images/imagen_2022-12-27_034727150.png' %}" alt="project" id="img-principal"></a>
                 </div>
-
-                {% if project.url %}
-
-                    {% if 'github' in project.url %}
-
-                        {% for icon in icons %}
-
-                        {% if icon.name == 'github' %}
-
-                        <div class="link">
-                            <a href="{{project.url}}" target="_blank"><img src="{{icon.image.url}}" alt="GitHub Link"></a>
-                        </div>
-
-                        {% endif %}
-
-                        {% endfor %}
-
-                    {% else %}
-
-                        {% for icon in icons %}
-
-                        {% if icon.name == 'link' %}
-
-                        <div class="link">
-                            <a href="{{project.url}}" target="_blank"><img src="{{icon.image.url}}" alt="Link"></a>
-                        </div>
-
-                        {% endif %}
-
-                        {% endfor %}
-
-                    {% endif %}
-
-                {% else %}
                     <div class="link">
-                        <h4>Without Link</h4>
+                        <a href="{% static 'icons/github_B7G9CbJ.png' %}" target="_blank"><img src="{% static 'icons/github_B7G9CbJ.png' %}" alt="GitHub Link"></a>
                     </div>
 
-                {% endif %}
-
                 <div class="proyecto-titulo">
-                {{project.title}}
+                    World Of Warcraft Register
                 </div>
                 <div class="proyecto-descripcion">
-                    {{project.description}}
+                    This is my first project. World Of Warcraft Register (WOWR) is a ore farm register for players of World Of Warcraft Wrath Of The Lich King. This app was maked with Python and works with a graphic interface and a CRUD in a database.
                 </div>
                 
             </div>
 
+            <div class="proyecto">
+                <div class="proyecto-imagen">
+                    <a href='{% static "images/WhatsApp_Image_2022-12-26_at_10.17.29_AM.jpeg" %}' alt="project image"><img src="{% static 'images/WhatsApp_Image_2022-12-26_at_10.17.29_AM.jpeg' %}" alt="project" id="img-principal"></a>
+                </div>
+                    <div class="link">
+                        <a href="{% static 'icons/wqfowqo.png' %}" target="_blank"><img src="{% static 'icons/wqfowqo.png' %}" alt="GitHub Link"></a>
+                    </div>
 
-            {% endfor %}
+                <div class="proyecto-titulo">
+                    Instagram
+                </div>
+                <div class="proyecto-descripcion">
+                    Instagram ​ es una aplicación y red social de origen estadounidense, propiedad de Meta. Creada por Kevin Systrom y Mike Krieger, fue lanzada el 6 de octubre de 2010. Ganó rápidamente popularidad, llegando a tener más de 100 millones de usuarios activos en abril de 2012 y más de 300 millones en diciembre de 2014.​
+                </div>
+                
+            </div>
 
         </div>
-
-    {% endif %}
 
 {% endblock %}

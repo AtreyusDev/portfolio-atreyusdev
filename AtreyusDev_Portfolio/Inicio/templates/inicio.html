@@ -12,8 +12,6 @@
 
             <img src="{% static 'images/foto.jpg' %}" alt="Foto de AtreyusDev">
 
-            <img src="https://github.com/AtreyusRey/portfolio-atreyusdev/blob/master/AtreyusDev_Portfolio/media/images/imagen_2022-12-27_034727150.png" alt="prueba">
-
         </div>
 
         <div class="info">
@@ -40,15 +38,15 @@
 
         {% if icon.name == 'github' %}
 
-        <a href="https://github.com/AtreyusRey" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
+        <a href="https://github.com/AtreyusRey" target="_blank"><img src="{% static 'icons/github_B7G9CbJ.png' %}" class="iconos-contacto"></a>
 
         {% elif icon.name == 'facebook' %}
 
-        <a href="https://www.facebook.com/profile.php?id=100075827833368" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
+        <a href="https://www.facebook.com/profile.php?id=100075827833368" target="_blank"><img src="{% static 'icons/facebook_YZAvfU7.png' %}" class="iconos-contacto"></a>
 
         {% elif icon.name == 'linkedin' %}
 
-        <a href="https://www.linkedin.com/in/atreyus-reyes-álvarez-316a7b256/" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
+        <a href="https://www.linkedin.com/in/atreyus-reyes-álvarez-316a7b256/" target="_blank"><img src="{% static 'icons/linkedin_N4CY4mz.png' %}" class="iconos-contacto"></a>
 
         {% endif %}
 
