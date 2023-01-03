@@ -7,9 +7,9 @@ from django.db.models.fields.files import *
 class Proyectos(models.Model):
     title = CharField(max_length=100)
     description = CharField(max_length=250)
-    image1 = ImageField(upload_to='images/')
+    image = ImageField(upload_to='projects/')
     url = URLField(blank=True)
 
 class Iconos(models.Model):
     name = CharField(max_length=40)
-    image = ImageField(upload_to='images/icons/')
+    image = ImageField(upload_to='icons/')

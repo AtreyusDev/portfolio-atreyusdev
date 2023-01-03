@@ -22,6 +22,7 @@ from Inicio import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Inicio.urls')),
+    path('', include('Contacto.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

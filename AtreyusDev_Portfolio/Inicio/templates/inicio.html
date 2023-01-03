@@ -16,17 +16,20 @@
 
         <div class="info">
 
-            <h1>Hi, i am <strong style="color:aqua">Atreyus</strong></h1>
+            <h1>Hi, I am <strong style="color:aqua">Atreyus</strong></h1>
 
-            <p>Fullstack developer, with love for the technology and excited for improve my skills to help the humanity progress. 
-                With my passion for the art and a constant learning, i use my knowledge to make my clients' ideas possible.
+            <p>
+                A fullstack developer specialized in backend, passionate for the technology and excited for improve my skills to help the humanity progress. With my passion for the art and a constant learning, I use my knowledge to make my clients’ ideas possible.
             </p>
 
-            <p>I´m specialized in Python, and i would like work with the IA. I think there is the future and i want to contribute
-                with it.
+            <p>
+                I would like work with the IA. I think this is the future and i want to contribute
+                with it. Coding is my life and I want to use that for the production of useful applications.
             </p>
 
-            <p>Please, check my page, specially my Portfolio if you want to know my habilities. Good day!</p>
+            <p>
+                Please, check my page if you want to know my habilities. Good day!
+            </p>
 
         </div>
         
@@ -38,19 +41,62 @@
 
         {% if icon.name == 'github' %}
 
-        <a href="https://github.com/AtreyusRey" target="_blank"><img src="{% static 'icons/github_B7G9CbJ.png' %}" class="iconos-contacto"></a>
+        <a href="https://github.com/AtreyusRey" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
 
         {% elif icon.name == 'facebook' %}
 
-        <a href="https://www.facebook.com/profile.php?id=100075827833368" target="_blank"><img src="{% static 'icons/facebook_YZAvfU7.png' %}" class="iconos-contacto"></a>
+        <a href="https://www.facebook.com/profile.php?id=100075827833368" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
 
         {% elif icon.name == 'linkedin' %}
 
-        <a href="https://www.linkedin.com/in/atreyus-reyes-álvarez-316a7b256/" target="_blank"><img src="{% static 'icons/linkedin_N4CY4mz.png' %}" class="iconos-contacto"></a>
+        <a href="https://www.linkedin.com/in/atreyus-reyes-álvarez-316a7b256/" target="_blank"><img src="{{icon.image.url}}" class="iconos-contacto"></a>
 
         {% endif %}
 
         {% endfor %}
+
+    </div>
+
+</section>
+
+<section class="conocimientos">
+
+    <h1 class="titulo-conocimientos">Knowledges</h1>
+
+    <div class="seccion-conocimientos">
+
+        <div class="lenguajes">
+
+            <h2 class="subtitulos">Lenguagues and Tools</h2>
+
+            <p><img src="/media/icons/python.png">  Python</p>
+            <p><img src="/media/icons/javascript.png">  JavaScript</p>
+            <p><img src="/media/icons/java.png">  Java</p>
+            <p><img src="/media/icons/html.png">  HTML</p>
+            <p><img src="/media/icons/css.png">  CSS</p>
+            <p><img src="/media/icons/sql.png">  SQL</p>
+
+        </div>
+
+        <div class="resumen">
+
+            <h2 class="subtitulos">About</h2>
+
+            <p>Basic knowledges of Java and JavaScript. Strong skills with Python. I can work with Graphic Interfaces,
+                APIs Restfull, API Gateway, Data Bases (Sqlite3, MySQL, PostgreSQL), GIT and Github, Django and Pandas.
+            </p>
+            <p> My studies comes from Udemy and a totally autodidact education. Here is my
+                certificate and my CV.
+            </p>
+
+            <div class="botones-certificado">
+
+                <a href="{% static 'images/cv.pdf' %}" target="_blank"><h2>Show CV</h2></a>
+                <a href="{% static 'images/CertificadoUdemyEnglish.jpg' %}" target="_blank"><h2>Certificate</h2></a>
+
+            </div>
+
+        </div>
 
     </div>
 

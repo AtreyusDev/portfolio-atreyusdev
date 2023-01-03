@@ -138,8 +138,8 @@ header h1{
 }
 
 .navegacion{
-    margin-left: 70%;
-    width: 25%;
+    margin-left: 60%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -163,9 +163,22 @@ header h1{
 
 @media screen and (max-width: 760px){
     .AtreyusDev {
-        font-size: 20px;
+        font-size: 42px;
         top: 35px;
         left: 30px;
+        
+    }
+
+    .contenedor {
+        width:100%;
+        min-width: 280px;
+        height: 100%;
+    }
+
+    header {
+        background-color:black;
+        height: 150px;
+        margin: 0% auto;
     }
 
     .pie-de-pagina{
@@ -174,9 +187,9 @@ header h1{
 
     .navegacion{
         display: block;
-        align-items: center;
-        justify-content: center;
-        
+        width: 100px;
+        text-align: center;
+        margin-left: 75%;
     }
 
     .navegacion a{
@@ -184,8 +197,8 @@ header h1{
         margin-top: 50px;
     }
 
-    header{
-        height: 80px;
+    .navegacion h2{
+        padding-top: 5px;
     }
 
     .acerca-de-mi {
@@ -224,7 +237,11 @@ header h1{
     .acerca-de-mi{
         height: 880px;
         min-width: 250px;
+    }
 
+    .AtreyusDev {
+        font-size: 30px;
+        top: 60px;
     }
 
     .pie-de-pagina{
@@ -545,6 +562,221 @@ header h1{
 
 }
 
+.conocimientos {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
 
+.titulo-conocimientos{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: aqua;
+    font-size: 38px;
+}
+
+.seccion-conocimientos{
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.lenguajes{
+    display: block;
+    text-align: justify;
+    width: 50%;
+    margin: 1%;
+}
+
+.lenguajes p {
+    margin-left: 10%;
+}
+
+.lenguajes h2 {
+    text-align: center;
+}
+
+.lenguajes img{
+    width: 20px;
+    height: 20px;
+}
+
+.lenguajes:hover{
+    transform: scale(1.05);
+}
+
+.lenguajes p:hover{
+    transform: scale(1.05);
+    background-color: rgb(0, 255, 255, 0.1);
+}
+
+.resumen{
+    text-align: justify;
+    max-width: 50%;
+    margin: 1% 3% 1% 2%;
+}
+
+.resumen h2{
+    text-align: center;
+}
+
+.botones-certificado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.botones-certificado h2:hover{
+    transform: scale(1.05);
+    background-color: rgb(0, 0, 80);
+    color: aqua;
+}
+
+.botones-certificado h2 {
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(0, 9, 92);
+    border-radius: 20%;
+
+}
+
+.botones-certificado a {
+    text-decoration: none;
+    
+}
+
+.subtitulos {
+    background-color: rgb(0, 255, 255, 0.1);
+}
+
+.subtitulos:hover{
+    background-color: rgb(0, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 760px){
+
+    .seccion-conocimientos{
+        display: block;
+    }
+
+    .conocimientos{
+        margin-top: 60%;
+    }
+
+    .lenguajes{
+        width: 99%;
+        text-align: center;
+    }
+
+    .resumen{
+        text-align: center;
+        width: 100%;
+    }
+
+    .subtitulos{
+        width: 100%;
+        
+    }
+
+    .lenguajes p{
+        margin-left: 0%;
+    }
+
+    .resumen {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .conocimientos {
+        margin-top: 75%;
+    }
+
+
+}
+
+@media screen and (max-width: 437px){
+
+    .conocimientos {
+        margin-top: 550px;
+    }
+
+    .seccion-conocimientos {
+        min-width: 270px;
+    }
+
+    .titulo-conocimientos {
+        min-width: 270px;
+    }
+}
+
+.contacto{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.fondo-contacto{
+    background-color: rgb(0, 0, 0, 0.7);
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.texto {
+    padding-top: 20px;
+    min-width: 270px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 1% auto;
+}
+
+.formulario input {
+    background: rgb(0, 48, 48);
+    
+    border: none;
+    border-bottom: 2px solid rgb(207, 255, 255);
+    color: white;
+}
+
+.campos {
+    margin: 6% auto;
+}
+
+@media screen and (max-width: 760px){
+
+    .contacto {
+        margin-top: 30%;
+    }
+
+}
+
+.boton_enviar {
+    border-radius: 30%;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0px 3px rgba(0, 204, 255, 0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.boton_enviar:hover{
+    background: linear-gradient(67deg, rgba(2,0,36,1) 0%, rgba(22,45,148,1) 0%, rgba(0,186,203,1) 49%, rgba(0,16,70,1) 100%);
+    transform: scale(1.1);
+}
 
 

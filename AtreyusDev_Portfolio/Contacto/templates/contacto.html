@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="contacto">
+
+    <div class="fondo-contacto">
+
+        <div class="texto">
+
+            <h1 style="color: aqua;">Contact me</h1>
+            <p>¿Are you looking for a new talent?</p>
+            <p>¿Do you want to transform an idea to reality?</p>
+            <p>Fill these fields and I will send you a mail with my contact info.</p>
+
+            {% if form.errors %}
+
+            <p style="color: red;">Por favor revisa los datos ingresados.</p>
+
+            {% endif %}
+
+            <form action="" method="POST" class="campos"> 
+                
+                {% csrf_token %}
+
+                <table  class="formulario">
+
+                    {{form.as_table}}
+
+                </table>
+
+                <input type="submit" value="Send" class="boton_enviar">
+
+                {% if "valid" in request.GET %}
+
+                    <p>Contact Information sent to the email address. ¡Check out!</p>
+
+                {% endif %}
+
+                <br>
+
+            </form>
+
+        </div>
+        
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -15,6 +15,7 @@
             <div class="navegacion">
                 <h2><a href="{% url 'inicio' %}">Home</a></h2>
                 <h2><a href="{% url 'proyectos' %}">Projects</a></h2>
+                <h2><a href="{% url 'contacto' %}">Contact</a></h2>
             </div>
         </header>
     </div>
@@ -24,23 +25,28 @@
     {% endblock %}
 
     <section class="pie-de-pagina">
+
         <div class="pie">
+
             <p>AtreyusDev - All rights reserved - 2023</p>
+
+            
+
             <div class="lenguajes-usados">
 
                 {% for icon in icons %}
 
                 {% if icon.name == 'python' %}
 
-                <img src="{% static 'icons/python_b3wdrsn.png' %}" class="iconos">
+                <img src="{{icon.image.url}}" class="iconos">
 
                 {% elif icon.name == 'html' %}
 
-                <img src="{% static 'icons/html_jbN78i3.png' %}" class="iconos">
+                <img src="{{icon.image.url}}" class="iconos">
 
                 {% elif icon.name == 'css' %}
 
-                <img src="{% static 'icons/css_4rQMSbg.png' %}" class="iconos">
+                <img src="{{icon.image.url}}" class="iconos">
 
                 {% endif %}
 
