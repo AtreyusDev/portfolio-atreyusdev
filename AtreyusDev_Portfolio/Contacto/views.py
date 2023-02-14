@@ -16,21 +16,16 @@ def contacto(request):
         if formulario.is_valid():
 
             informacion_formulario = formulario.cleaned_data
+            send_mail('Correo originado de PortafolioWeb AtreyusDev', f'''Usuario: {informacion_formulario['nombre']}.
+Correo: {informacion_formulario['correo']}
+Mensaje: {informacion_formulario["mensaje"]}.''',
+            f'Solicitud de Contacto con AtreyusDev', ['jizdsing@gmail.com'], fail_silently=False,)
 
-            send_mail(
-                'Contact Info of AtreyusDev',
-                f"""Hi {informacion_formulario["nombre"]}. I´m so happyfull for your interest in contact me. I´m sure we'll have a good conversation.
-                
-                You can contact me by:
+            send_mail('From AtreyusDev', f'''Hi {informacion_formulario['nombre']}. Your message has been sent successfully! Please be patience waiting the answer. 
 
-                Whattsapp = https://wa.me/+584142383498
-                Email = jizdsing@gmail.com
+Adittional, I want to invite you to check my GitHub and my projects.
 
-                If you are interested in contact by Email, you can reply this messagge and I will answer soon.
-                
-                """,
-                'jizdsing@gmail.com', [informacion_formulario['email']], fail_silently=False,
-            )
+My GitHub: https://github.com/AtreyusRey''', f'Solicitude of contact to AtreyusDev', [f'{informacion_formulario["correo"]}'], fail_silently=False,)
 
             return redirect("/contact/?valid")
     

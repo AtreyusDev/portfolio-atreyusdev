@@ -9,6 +9,7 @@ body {
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:white;
+    margin: 0;
 }
 
 .contenedor {
@@ -31,11 +32,6 @@ header h1{
     top: 25px;
     left: 80px;
     position: absolute;
-    transition: all 0.3s;
-}
-
-.AtreyusDev:hover{
-    transform: scale(1.15);
 }
 
 .pie-de-pagina {
@@ -60,15 +56,6 @@ header h1{
     height: 30px;
     padding: 15px 0px 0px 0px;
     margin: 0 auto;
-    transition: all 0.2s;
-}
-
-.iconos:hover{
-    transform: scale(1.15);
-}
-
-.lenguajes-usados {
-    display: flex;
 }
 
 .inicio{
@@ -161,6 +148,18 @@ header h1{
     padding-right: 7px;
 }
 
+@media screen and (max-width: 1000px){
+    .acerca-de-mi {
+        height: 600px;  
+    }
+}
+
+@media screen and (max-width: 850px){
+    .acerca-de-mi {
+        height: 700px;  
+    }
+}
+
 @media screen and (max-width: 760px){
     .AtreyusDev {
         font-size: 42px;
@@ -203,7 +202,7 @@ header h1{
 
     .acerca-de-mi {
         display: block;
-        height: 700px;
+        height: 800px;
         min-width: 380;
         
     }
@@ -233,9 +232,34 @@ header h1{
 
 }
 
+@media screen and (max-width: 650px){
+    .acerca-de-mi {
+        height: 860px;
+    }
+}
+
+@media screen and (max-width: 567px){
+    .acerca-de-mi {
+        height: 950px;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .acerca-de-mi {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .acerca-de-mi {
+        height: 1050px;
+    }
+}
+
+
 @media screen and (max-width: 437px){
     .acerca-de-mi{
-        height: 880px;
+        height: 1150px;
         min-width: 250px;
     }
 
@@ -259,9 +283,39 @@ header h1{
     }
 }
 
+@media screen and (max-width: 403px){
+    .acerca-de-mi {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .acerca-de-mi {
+        height: 1250px;
+    }
+}
+
+@media screen and (max-width: 349px){
+    .acerca-de-mi {
+        height: 1320px;
+    }
+}
+
+@media screen and (max-width: 332px){
+    .acerca-de-mi {
+        height: 1400px;
+    }
+}
+
+@media screen and (max-width: 307px){
+    .acerca-de-mi {
+        height: 1500px;
+    }
+}
+
 @media screen and (max-width: 285px){
     .acerca-de-mi{
-        height: 900px;
+        height: 1320px;
 
     }
 
@@ -563,8 +617,8 @@ header h1{
 }
 
 .conocimientos {
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-bottom: 0%;
 }
 
 .titulo-conocimientos{
@@ -600,15 +654,6 @@ header h1{
     height: 20px;
 }
 
-.lenguajes:hover{
-    transform: scale(1.05);
-}
-
-.lenguajes p:hover{
-    transform: scale(1.05);
-    background-color: rgb(0, 255, 255, 0.1);
-}
-
 .resumen{
     text-align: justify;
     max-width: 50%;
@@ -626,6 +671,7 @@ header h1{
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
+    transition: all 0.9s;
 }
 
 .botones-certificado h2:hover{
@@ -659,6 +705,38 @@ header h1{
 
 .subtitulos:hover{
     background-color: rgb(0, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 1000px){
+
+    .conocimientos{
+        margin-top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 910px){
+
+    .conocimientos{
+        margin-top: 27%;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+
+    .conocimientos{
+        margin-top: 42%;
+    }
+
+}
+
+@media screen and (max-width: 790px){
+
+    .conocimientos{
+        margin-top: 45%;
+    }
+
 }
 
 @media screen and (max-width: 760px){
@@ -696,18 +774,58 @@ header h1{
 
 }
 
-@media screen and (max-width: 550px){
-    .conocimientos {
-        margin-top: 75%;
+@media screen and (max-width: 710px){
+
+    .conocimientos{
+        margin-top: 65%;
     }
 
+}
 
+@media screen and (max-width: 660px){
+
+    .conocimientos{
+        margin-top: 80%;
+    }
+
+}
+
+@media screen and (max-width: 610px){
+
+    .conocimientos{
+        margin-top: 87%;
+    }
+
+}
+
+@media screen and (max-width: 567px){
+    .conocimientos {
+        margin-top: 115%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .conocimientos {
+        margin-top: 120%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .conocimientos {
+        margin-top: 140%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .conocimientos {
+        margin-top: 160%;
+    }
 }
 
 @media screen and (max-width: 437px){
 
     .conocimientos {
-        margin-top: 550px;
+        margin-top: 200%;
     }
 
     .seccion-conocimientos {
@@ -752,7 +870,83 @@ header h1{
 }
 
 .campos {
-    margin: 6% auto;
+    margin: 2% auto;
+}
+
+@media screen and (max-width: 420px){
+    .conocimientos {
+        margin-top: 210%;
+    }
+}
+
+@media screen and (max-width: 403px){
+    .conocimientos {
+        margin-top: 230%;
+    }
+
+    .fondo-contacto {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 391px){
+    .conocimientos {
+        margin-top: 250%;
+    }
+}
+
+@media screen and (max-width: 374px){
+    .conocimientos {
+        margin-top: 260%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .conocimientos {
+        margin-top: 270%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .conocimientos {
+        margin-top: 300%;
+    }
+}
+
+@media screen and (max-width: 344px){
+    .conocimientos {
+        margin-top: 330%;
+    }
+}
+
+@media screen and (max-width: 332px){
+    .conocimientos {
+        margin-top: 350%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .conocimientos {
+        margin-top: 370%;
+    }
+}
+
+@media screen and (max-width: 307px){
+    .conocimientos {
+        margin-top: 410%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .conocimientos {
+        margin-top: 440%;
+    }
+}
+
+@media screen and (max-width: 285px){
+    .conocimientos {
+        margin-top: 960px;
+    }
 }
 
 @media screen and (max-width: 760px){
